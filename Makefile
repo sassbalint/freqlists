@@ -16,5 +16,5 @@ SAMPLESIZE=10
 RANDOMSEED=42
 SCRIPT=$S/random_sampler.py
 sample:
-	python3 $(SCRIPT) --filename $(INPUT) --samplesize $(SAMPLESIZE) --randomseed $(RANDOMSEED) > $O/out
+	python3 $(SCRIPT) --filename $(INPUT) --samplesize $(SAMPLESIZE) --randomseed $(RANDOMSEED) > $O/$(FILENAME).$(SAMPLESIZE).$(RANDOMSEED).out
 
