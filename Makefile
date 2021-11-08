@@ -11,9 +11,9 @@ O=out
 # ===== MAIN STUFF 
 
 FILENAME=$I/data
-SAMPLESIZE=100
+SAMPLESIZE=10
 RANDOMSEED=42
 SCRIPT=$S/random_sampler.py
 sample:
-	python3 $(SCRIPT) --filename $(FILENAME) --samplesize $(SAMPLESIZE) --randomseed $(RANDOMSEED)
+	python3 $(SCRIPT) --filename $(FILENAME) --samplesize $(SAMPLESIZE) --randomseed $(RANDOMSEED) > $O/out
 

@@ -17,10 +17,10 @@ def random_sampler(filename, samplesize, randomseed):
         f.seek(0, 2)
         filesize = f.tell()
 
-        random_set = sorted(random.sample(range(filesize), samplesize))
+        positions = sorted(random.sample(range(filesize), samplesize))
 
-        for i in range(samplesize):
-            f.seek(random_set[i])
+        for pos in positions:
+            f.seek(pos)
             # Skip current line (because we might be in the middle of a line)
             f.readline()
             # Append the next line to the sample set
