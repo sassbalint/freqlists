@@ -24,7 +24,7 @@ def random_sampler(filename, samplesize, randomseed):
             # Skip current line (because we might be in the middle of a line)
             f.readline()
             # Append the next line to the sample set
-            sample.append(f.readline().rstrip())
+            sample.append(f.readline().decode("utf-8").rstrip())
 
     return sample
 
