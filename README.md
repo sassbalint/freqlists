@@ -32,3 +32,7 @@ tok _or_ split by space\
 sentsplit _or_ split by ≈100 chars or ≈7 words\
 :arrow_right: spl\
 :arrow_right: base unit = "sentence"
+
+hm.. a sampling szereti, ha kb. egyforma hosszúak a sorok,
+megoldás lehet: a hosszú mondatok tördelése!
+
