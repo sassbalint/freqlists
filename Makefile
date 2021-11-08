@@ -10,10 +10,11 @@ O=out
 
 # ===== MAIN STUFF 
 
-FILENAME=$I/data
+FILENAME=data
+INPUT=$I/$(FILENAME)
 SAMPLESIZE=10
 RANDOMSEED=42
 SCRIPT=$S/random_sampler.py
 sample:
-	python3 $(SCRIPT) --filename $(FILENAME) --samplesize $(SAMPLESIZE) --randomseed $(RANDOMSEED) > $O/out
+	python3 $(SCRIPT) --filename $(INPUT) --samplesize $(SAMPLESIZE) --randomseed $(RANDOMSEED) > $O/out
 
