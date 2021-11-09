@@ -8,14 +8,14 @@ the point: a __unified__ approach based on frequency lists
 
 ## :fire: TODO
 
-1. :fire: create plan: how to tackle each cleanness aspect using frequency lists
-   (1) fragment
-   (2) foreign
-   (3) spelling
-   (4) dedup
+1. :fire: create plan: how to tackle each cleanness aspect using frequency lists:\
+(1) fragment;
+(2) foreign;
+(3) spelling;
+(4) dedup
 
 2. :fire: implementation based on [`book-index/freqlists.py`](https://github.com/sassbalint/book-index/blob/main/scripts/freqlists.py):\
-(1) take script, (2) correct it (identify problem), (3) split to several scripts?, (4) solve all problems with it :)
+(1) take script; (2) correct it (identify problem); (3) split to several scripts?; (4) solve all problems with it :)
 
 
 ## (2) foreign :fire: TODO
@@ -41,6 +41,19 @@ very few > rank=5000 > some > rank=1000 > quite much
 Looking at concordance of _the_ in MNSZ, it can be the case that
 even such many English text is not too much,
 because most hits are part of small English excerpts! Hm..
+
+
+## (3) spelling :fire: TODO
+
+command:
+```
+scripts/investigate_spelling.sh
+```
+
+XXX megcsinálni a táblázatot szépen! :)\
+XXX ld.: otthon:tmp/inti/rilex/investigate_corpus.ods (!)\
+XXX itt is az jön ki, hogy tök egyértelműen az MNSZ a legócskább :)\
+XXX csak meg kéne tenni azt, hogy alkorpuszonként vizsgálódni! :)
 
 
 ## _efficient_ sampling from gigamegalarge corpora
