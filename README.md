@@ -18,6 +18,15 @@ the point: a __unified__ approach based on frequency lists
 (1) take script; (2) correct it (identify problem); (3) split to several scripts?; (4) solve all problems with it :)
 
 
+## sample for experiments
+
+command:
+```
+scripts/create_samples.sh
+```
+== `SAMPLESIZE=100000 RANDOMSEED=42`
+
+
 ## (2) foreign :fire: TODO
 
 _Are there too much foreign text in the corpus?_
@@ -27,7 +36,6 @@ based on the freq of most frequent words in certain languages
 
 command:
 ```
-scripts/create_samples.sh
 scripts/investigate_foreign.sh
 ```
 results:
@@ -49,11 +57,12 @@ command:
 ```
 scripts/investigate_spelling.sh
 ```
+results:
+|                   |`MagyarSzo`|`KiadokAkademiai`|`arcj_teljes`|`MNSZ_nowp`|
+|:--                |        --:|              --:|          --:|        --:|
+|es/ugy/tobb/jo/ev% |0,13%      |0,10%            |0,09%        |1,06%      |
 
-XXX megcsinálni a táblázatot szépen! :)\
-XXX ld.: otthon:tmp/inti/rilex/investigate_corpus.ods (!)\
-XXX itt is az jön ki, hogy tök egyértelműen az MNSZ a legócskább :)\
-XXX csak meg kéne tenni azt, hogy alkorpuszonként vizsgálódni! :)
+Idea: investigate MNSZ2 by subcorpora?
 
 
 ## _efficient_ sampling from gigamegalarge corpora
