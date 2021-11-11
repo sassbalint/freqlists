@@ -22,7 +22,7 @@ the point: a __unified__ approach based on frequency lists
 
 command:
 ```
-scripts/create_samples.sh
+scripts/create_samples.sh 42
 ```
 == `SAMPLESIZE=100000 RANDOMSEED=42`
 
@@ -36,7 +36,7 @@ based on the freq of most frequent words in certain languages
 
 command:
 ```
-scripts/investigate_foreign.sh
+scripts/investigate_foreign.sh 42
 ```
 results:
 |language|`MagyarSzo`|`KiadokAkademiai`|`arcj_teljes`|`MNSZ_nowp`|
@@ -45,6 +45,8 @@ results:
 |German  |very few   |some             |very few     |very few   |
 
 very few > rank=5000 > some > rank=1000 > quite much
+
+Result is stable = `RANDOMSEED=42` and `RANDOMSEED=43` gives essentially the same.
 
 Looking at concordance of _the_ in MNSZ, it can be the case that
 even such many English text is not too much,
@@ -55,12 +57,14 @@ because most hits are part of small English excerpts! Hm..
 
 command:
 ```
-scripts/investigate_spelling.sh
+scripts/investigate_spelling.sh 42
 ```
 results:
 |                   |`MagyarSzo`|`KiadokAkademiai`|`arcj_teljes`|`MNSZ_nowp`|
 |:--                |        --:|              --:|          --:|        --:|
 |es/ugy/tobb/jo/ev% |0,13%      |0,10%            |0,09%        |1,06%      |
+
+Result is stable = `RANDOMSEED=42` and `RANDOMSEED=43` gives essentially the same.
 
 Idea: investigate MNSZ2 by subcorpora?
 
