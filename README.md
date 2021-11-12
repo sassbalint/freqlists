@@ -22,7 +22,7 @@ the point: a __unified__ approach based on frequency lists
 
 command:
 ```
-scripts/create_samples.sh 42
+scripts/create_samples.sh FILENAME 42
 ```
 == `SAMPLESIZE=100000 RANDOMSEED=42`
 
@@ -36,7 +36,7 @@ based on the freq of most frequent words in certain languages
 
 command:
 ```
-scripts/investigate_foreign.sh 42
+scripts/investigate_foreign.sh FILENAME 42
 ```
 results:
 |language|`MagyarSzo`|`KiadokAkademiai`|`arcj_teljes`|`MNSZ_nowp`|
@@ -57,7 +57,7 @@ because most hits are part of small English excerpts! Hm..
 
 command:
 ```
-scripts/investigate_spelling.sh 42
+scripts/investigate_spelling.sh FILENAME 42
 ```
 results:
 |                   |`MagyarSzo`|`KiadokAkademiai`|`arcj_teljes`|`MNSZ_nowp`|
