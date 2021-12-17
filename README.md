@@ -22,9 +22,8 @@ the point: a __unified__ approach based on frequency lists
 
 command:
 ```
-scripts/create_samples.sh FILENAME 42
+make sample FILENAME=? SAMPLESIZE=100000 RANDOMSEED=42
 ```
-== `SAMPLESIZE=100000 RANDOMSEED=42`
 
 
 ## (2) foreign :fire: TODO
@@ -81,7 +80,7 @@ files (from `arcj`):
 |`arcj_teljes`        |1067.0 M|10650 M|67.0G|
 
 command:
-`time make sample FILENAME=MagyarSzo SAMPLESIZE=?`
+`time make sample FILENAME=? SAMPLESIZE=?`
 
 results (average of 3 measures, in seconds):
 <!--

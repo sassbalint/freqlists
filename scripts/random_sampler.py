@@ -6,12 +6,15 @@ Algorithm #3
 
 import argparse
 import random
+from collections import defaultdict
 
 
 def random_sampler(filename, samplesize, randomseed):
     sample = []
 
     random.seed(randomseed)
+
+    cache = defaultdict()
 
     with open(filename, 'rb') as f:
         f.seek(0, 2)
@@ -23,8 +26,13 @@ def random_sampler(filename, samplesize, randomseed):
             f.seek(pos)
             # Skip current line (because we might be in the middle of a line)
             f.readline()
+            # Skip until line is not empty and have not yet occured
+            line = ""
+            while not line or line in cache:
+                line = f.readline().decode("utf-8").rstrip()
             # Append the next line to the sample set
-            sample.append(f.readline().decode("utf-8").rstrip())
+            sample.append(line)
+            cache[line] = True
 
     return sample
 
