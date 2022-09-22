@@ -14,7 +14,8 @@ FILENAME=data
 INPUT=$I/$(FILENAME)
 SAMPLESIZE=10
 RANDOMSEED=42
-SCRIPT=$S/random_sampler.py
+SCRIPT=utils/random_sampler.py
 sample:
+	git clone https://sassbalint@github.com/sassbalint/utils
 	python3 $(SCRIPT) --filename $(INPUT) --samplesize $(SAMPLESIZE) --randomseed $(RANDOMSEED) > $O/$(FILENAME).$(SAMPLESIZE).$(RANDOMSEED).out
 

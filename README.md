@@ -70,7 +70,7 @@ Idea: investigate MNSZ2 by subcorpora?
 
 ## _efficient_ sampling from gigamegalarge corpora
 
-implementation: https://github.com/sassbalint/freqlists/blob/main/scripts/random_sampler.py ([original source](http://metadatascience.com/2014/02/27/random-sampling-from-very-large-files))
+implementation: https://github.com/sassbalint/utils/blob/main/random_sampler.py ([original source](http://metadatascience.com/2014/02/27/random-sampling-from-very-large-files))
 
 files (from `arcj`):
 |name                 |rows    |words  |bytes|
